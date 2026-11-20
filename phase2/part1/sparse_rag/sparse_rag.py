@@ -31,7 +31,7 @@ retriever.k=3
 
 question = input("Ask your question:")
 results = retriever.invoke(question)
-context = "\n \n".join([doc.page_content for doc in results])
+context = "\n\n".join([doc.page_content for doc in results])
 
 prompt = f""" Answer the question using only the context below.
 If the answer is not in the context,say you don't know.
