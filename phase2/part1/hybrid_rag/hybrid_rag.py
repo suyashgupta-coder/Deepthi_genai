@@ -117,5 +117,5 @@ while True:
     # Generate Answer
     response = model.invoke(prompt)
 
-    print("\nAI:", response.content)
+    print("\nAI:", response.text)
     print("\n" + "-" * 60 + "\n")
